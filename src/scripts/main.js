@@ -4,14 +4,12 @@ import 'bootstrap'; // import bootstrap elements and js
 import '../styles/main.scss';
 import buttonEvents from './buttonEvents';
 import domBuilder from './helpers/domBuilder';
-import jokeData from './helpers/jokeData';
 import getAJoke from './helpers/getAJoke';
 
 const init = () => {
   domBuilder();
   getAJoke();
   buttonEvents();
-  jokeData().then(console.warn);
 };
 
 init();
