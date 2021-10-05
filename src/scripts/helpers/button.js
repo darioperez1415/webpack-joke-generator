@@ -1,9 +1,11 @@
-const jokeButtons = () => {
+const showJoke = (obj = {}) => {
+  console.warn(obj);
+  document.querySelector('#joke-container').innerHTML = `
+  <h4>${obj.setup ? obj.setup : ''}</h4>
+  `;
   document.querySelector('#button-container').innerHTML = `
-    <button type="button" id="getJoke-btn" class="btn btn-primary">Get a JoKE</button>
-    <button type="button" id="getPunchline-btn" class="btn btn-secondary">Get a Punchline</button>
-    <button type="button" id="getANewLine-btn" class="btn btn-success"> Get a new Joke</button>
+    <button type="submit" id="joke-btn" class="btn btn-primary">Get a Joke</button>
     `;
 };
 
-export default jokeButtons;
+export default showJoke;

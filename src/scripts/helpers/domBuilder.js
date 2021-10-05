@@ -1,9 +1,7 @@
 const domBuilder = () => {
   document.querySelector('#app').innerHTML = `
-    <div id="main-container">
-    <div id="button-container></div>
-    <div id="joke-container><div>
-    <div>
+  <div id="joke-container"></div>
+    <div id="button-container"></div>
     `;
 };
 
