@@ -2,13 +2,15 @@
 
 import 'bootstrap'; // import bootstrap elements and js
 import '../styles/main.scss';
-import jokeData from './helpers/jokeData';
+import jokeButtons from './helpers/button';
+import domBuilder from './helpers/domBuilder';
+// import jokeData from './helpers/jokeData';
 
 const init = () => {
-  document.querySelector('#app').innerHTML = `
-  `;
-
-  jokeData().then(console.warn);
+  domBuilder();
+  jokeButtons();
+  console.warn('Joke-generator');
+  // jokeData().then(console.warn);
 };
 
 init();
