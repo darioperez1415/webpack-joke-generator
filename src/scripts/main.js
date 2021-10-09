@@ -2,13 +2,14 @@
 
 import 'bootstrap'; // import bootstrap elements and js
 import '../styles/main.scss';
-import jokeData from './helpers/jokeData';
+import buttonEvents from './buttonEvents';
+import domBuilder from './helpers/domBuilder';
+import getAJoke from './helpers/getAJoke';
 
 const init = () => {
-  document.querySelector('#app').innerHTML = `
-  `;
-
-  jokeData().then(console.warn);
+  domBuilder();
+  getAJoke();
+  buttonEvents();
 };
 
 init();
